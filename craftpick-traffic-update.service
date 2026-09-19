@@ -1,0 +1,8 @@
+[Unit]
+Description=Craftpick Traffic Monitor Auto Update
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/var/www/craftpick-trafic-dashboard/update.sh
